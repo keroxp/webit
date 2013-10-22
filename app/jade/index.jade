@@ -6,24 +6,12 @@ block content
       iframe(src="http://jade-lang.com/reference/")
   #comments
     #comments-table
-      .inner
-        - for (var i = 0; i < 5; i++)
-          .comment-row
-            .above
-              .comment-name
-                a(herf="#")
-                  | Anonymous
-              .comment-created-at
-                | 2013/10/22 22:41
-            .body
-              .comment-text
-                | コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-            .below
+      #comments-table-inner.inner
     #comment-area
       hr
       #comment-group
         .above
-          textarea#comment-textarea.form-control(type="text" ,wrap="soft")
+          textarea#comment-textarea.form-control(type="text", wrap="hard")
         .below
           button#comment-add-button.btn.btn-default(type="button")
             span.glyphicon.glyphicon-pushpin

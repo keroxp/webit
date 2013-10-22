@@ -71,7 +71,6 @@ iframe {
             .above {
                 width: 100%;
                 margin-bottom: 10px;
-                font-weight: bold;
                 display: table;
                 > div {
                     display: table-cell;
@@ -107,12 +106,8 @@ iframe {
                 display: table;
                 width: 100%;
                 @include clearfix;
-                button {
+                > * {
                     display: table-cell;
-                    text-align: right;
-                }
-                #comment-add-button {
-                    float : left;
                 }
                 #comment-send-button {
                     float: right;

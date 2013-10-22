@@ -56,6 +56,7 @@ html.no-js
     script(src='bower_components/jquery/jquery.js')
     script(src='bower_components/underscore/underscore.js')
     script(src='bower_components/backbone/backbone.js')
+    script(src='bower_components/moment/moment.js')
     // endbuild
     // build:js scripts/plugins.js
     script(src='bower_components/sass-bootstrap/js/affix.js')
@@ -72,10 +73,12 @@ html.no-js
     script(src='bower_components/sass-bootstrap/js/tab.js')
     // endbuild
     // build:js({.tmp,app}) scripts/main.js
-    script(src='scripts/main.js')
+    script(src="scripts/app.js")
     script(src='scripts/templates.js')
     script(src="scripts/models/comment.js")
-    scirpt(src="scripts/collections/comments.js")
+    script(src="scripts/collections/comments.js")
+    script(src="scripts/views/comments_table.js")
     script(src="scripts/views/comment_form.js")
     script(src="scripts/views/comment_row.js")
+    script(src='scripts/main.js')
     // endbuild

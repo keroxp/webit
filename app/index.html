@@ -37,64 +37,13 @@
       </div>
       <div id="comments">
         <div id="comments-table">
-          <div class="inner">
-            <div class="comment-row">
-              <div class="above">
-                <div class="comment-name"><a herf="#">Anonymous</a></div>
-                <div class="comment-created-at">2013/10/22 22:41</div>
-              </div>
-              <div class="body">
-                <div class="comment-text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</div>
-              </div>
-              <div class="below"></div>
-            </div>
-            <div class="comment-row">
-              <div class="above">
-                <div class="comment-name"><a herf="#">Anonymous</a></div>
-                <div class="comment-created-at">2013/10/22 22:41</div>
-              </div>
-              <div class="body">
-                <div class="comment-text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</div>
-              </div>
-              <div class="below"></div>
-            </div>
-            <div class="comment-row">
-              <div class="above">
-                <div class="comment-name"><a herf="#">Anonymous</a></div>
-                <div class="comment-created-at">2013/10/22 22:41</div>
-              </div>
-              <div class="body">
-                <div class="comment-text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</div>
-              </div>
-              <div class="below"></div>
-            </div>
-            <div class="comment-row">
-              <div class="above">
-                <div class="comment-name"><a herf="#">Anonymous</a></div>
-                <div class="comment-created-at">2013/10/22 22:41</div>
-              </div>
-              <div class="body">
-                <div class="comment-text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</div>
-              </div>
-              <div class="below"></div>
-            </div>
-            <div class="comment-row">
-              <div class="above">
-                <div class="comment-name"><a herf="#">Anonymous</a></div>
-                <div class="comment-created-at">2013/10/22 22:41</div>
-              </div>
-              <div class="body">
-                <div class="comment-text">コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</div>
-              </div>
-              <div class="below"></div>
-            </div>
-          </div>
+          <div id="comments-table-inner" class="inner"></div>
         </div>
         <div id="comment-area">
           <hr>
           <div id="comment-group">
             <div class="above">
-              <textarea id="comment-textarea" type="text" wrap="soft" class="form-control"></textarea>
+              <textarea id="comment-textarea" type="text" wrap="hard" class="form-control"></textarea>
             </div>
             <div class="below">
               <button id="comment-add-button" type="button" class="btn btn-default"><span class="glyphicon glyphicon-pushpin"></span></button>
@@ -117,6 +66,7 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
     <!-- endbuild-->
     <!-- build:js scripts/plugins.js-->
     <script src="bower_components/sass-bootstrap/js/affix.js"></script>
@@ -133,12 +83,14 @@
     <script src="bower_components/sass-bootstrap/js/tab.js"></script>
     <!-- endbuild-->
     <!-- build:js({.tmp,app}) scripts/main.js-->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/app.js"></script>
     <script src="scripts/templates.js"></script>
     <script src="scripts/models/comment.js"></script>
-    <scirpt src="scripts/collections/comments.js"></scirpt>
+    <script src="scripts/collections/comments.js"></script>
+    <script src="scripts/views/comments_table.js"></script>
     <script src="scripts/views/comment_form.js"></script>
     <script src="scripts/views/comment_row.js"></script>
+    <script src="scripts/main.js"></script>
     <!-- endbuild-->
   </body>
 </html>
