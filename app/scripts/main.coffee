@@ -5,6 +5,7 @@ window.webit =
   Routers: {}
   init: ->
     'use strict'
+    this.CommentFormView = new webit.Views.CommentFormView
     console.log 'Hello from Backbone!'
 
 $ ->

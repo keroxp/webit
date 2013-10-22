@@ -1,0 +1,32 @@
+extends layout
+block header
+block content
+  #webpage
+    .inner
+      iframe(src="http://jade-lang.com/reference/")
+  #comments
+    #comments-table
+      .inner
+        - for (var i = 0; i < 5; i++)
+          .comment-row
+            .above
+              .comment-name
+                a(herf="#")
+                  | Anonymous
+              .comment-created-at
+                | 2013/10/22 22:41
+            .body
+              .comment-text
+                | コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+            .below
+    #comment-area
+      hr
+      #comment-group
+        .above
+          textarea#comment-textarea.form-control(type="text" ,wrap="soft")
+        .below
+          button#comment-add-button.btn.btn-default(type="button")
+            span.glyphicon.glyphicon-pushpin
+          button#comment-send-button.btn.btn-primary(type="button")
+            | 送信
+block footer
