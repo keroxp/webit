@@ -3,7 +3,10 @@ block header
 block content
   #webpage
     .inner
-      iframe(src="http://jade-lang.com/reference/")
+      #url-input
+        input.form-control(type="text",placeHolder="ページのURLを入力")
+      hr
+      iframe#iframe
   #comments
     #comments-table
       #comments-table-inner.inner

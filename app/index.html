@@ -32,7 +32,11 @@
     <div id="container">
       <div id="webpage">
         <div class="inner">
-          <iframe src="http://jade-lang.com/reference/"></iframe>
+          <div id="url-input">
+            <input type="text" placeHolder="ページのURLを入力" class="form-control">
+          </div>
+          <hr>
+          <iframe id="iframe"></iframe>
         </div>
       </div>
       <div id="comments">
@@ -84,12 +88,15 @@
     <!-- endbuild-->
     <!-- build:js({.tmp,app}) scripts/main.js-->
     <script src="scripts/app.js"></script>
+    <script src="scripts/routes/app.js"></script>
     <script src="scripts/templates.js"></script>
     <script src="scripts/models/comment.js"></script>
     <script src="scripts/collections/comments.js"></script>
     <script src="scripts/views/comments_table.js"></script>
     <script src="scripts/views/comment_form.js"></script>
     <script src="scripts/views/comment_row.js"></script>
+    <script src="scripts/views/url_input.js"></script>
+    <script src="scripts/views/iframe.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild-->
   </body>

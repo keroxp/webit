@@ -38,6 +38,14 @@ iframe {
     margin-right: 350px;
     height: 100%;
     min-height: 100%;
+    #url-input {
+        width: 100%;
+        padding: 10px;
+        background-color: #efefef;
+    }
+    hr {
+        @include dirtyline(1,.1);
+    }
     .inner {
         height: 100%;
         min-height: 100%;
